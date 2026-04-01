@@ -1,0 +1,7 @@
+# Exemplo de como deve ser preenchido os dados do banco na aplicação, dentro do arquivo local application-dev.yaml
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/gestao_projetos
+    username: usuario_aqui
+    password: senha_aqui
