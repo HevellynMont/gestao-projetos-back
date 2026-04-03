@@ -47,8 +47,9 @@ constraint unq_tarefas_nome_projeto unique (projeto_id, nome)
 create table alunos(
 id bigint auto_increment primary key,
 nome varchar(30) not null,
+matricula varchar (8) not null,
 
-constraint unq_alunos_nome_banco unique (nome)
+constraint unq_alunos_nome_matricula unique (nome, matricula),
 );
 
 create table tarefas_alunos(
